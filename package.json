@@ -1,0 +1,37 @@
+{
+  "name": "inferno-compat-radium",
+  "version": "0.0.0",
+  "description": "attempt to make inferno-compat work with radium",
+  "main": "index.js",
+  "scripts": {
+    "start": "browserify . | browser-run -b chrome",
+    "radium": "browserify radium | browser-run -b chrome",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Martín Ciparelli",
+    "email": "mciparelli@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "inferno-compat": "^0.7.27",
+    "radium": "^0.18.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browser-run": "^3.2.0",
+    "browserify": "^13.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "browser": {
+    "react": "inferno-compat",
+    "react-dom": "inferno-compat"
+  }
+}
