@@ -4,8 +4,8 @@
   "description": "attempt to make inferno-compat work with radium",
   "main": "index.js",
   "scripts": {
-    "start": "budo . --open",
-    "radium": "budo radium.js --open",
+    "start": "budo . --open -- --debug",
+    "radium": "budo radium.js --open -- --debug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
